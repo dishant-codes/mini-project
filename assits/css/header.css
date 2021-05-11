@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.u-links:hover {
+  text-decoration: underline;
+}
+
 .main-div {
   background-color: #fff;
   padding: 20px;
@@ -77,7 +81,6 @@ a {
   font-size: 14px;
   background-color: transparent;
   border: 1px solid #000;
-  color: #000;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -85,4 +88,5 @@ a {
 .signIn:hover {
   background-color: rgb(0, 146, 146);
   color: #fff;
+  border-color: #fff;
 }
