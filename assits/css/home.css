@@ -1,0 +1,40 @@
+.home-1 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discrp {
+  margin-top: 3em;
+  width: 600px;
+  padding-left: 20px;
+}
+.discrp-2 {
+  width: 600px;
+}
+
+.discrp h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.home-img {
+  width: 400px;
+}
+.home-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+.info-links {
+  margin-left: 2em;
+  list-style-type: circle;
+}
+
+.info-links li {
+  padding: 7px 0;
+}
