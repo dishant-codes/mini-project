@@ -16,11 +16,27 @@ body {
 }
 a {
   text-decoration: none;
+  color:#283eb8;
+}
+
+.breedcrumb {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.breedcrumb-links {
+  display: flex;
+}
+
+.breedcrumb-item {
+  padding: 0 5px;
+  color: #6c757d;
 }
 
 .u-links:hover {
   text-decoration: underline;
 }
+
 
 .main-div {
   background-color: #fff;
@@ -48,6 +64,8 @@ a {
   font-size: 2.5em;
   font-weight: 500;
   color: rgb(0, 146, 146);
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -66,11 +84,12 @@ a {
   list-style: none;
 }
 
-.link-item:hover {
+.link-item a:hover {
   border-bottom: 3px solid #fff;
 }
 .link-item a {
   color: #fff;
+  padding-bottom: 5px;
 }
 
 .signIn {

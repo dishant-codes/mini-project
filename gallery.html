@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Blood Donation</title>
+    <link rel="stylesheet" href="./assits/css/header.css">
+    <link rel="stylesheet" href="./assits/css/gallery.css">
+    <link rel="stylesheet" href="./assits/css/footer.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <!-- Header -->
+        <Nav class="navbar">
+            <div class="brand">
+                <h2> <img src="./assits/img/logo.svg" alt="" width="50px" height="50px"> &nbsp;Blood Donation</h2>
+                <a href="Login.html" class="signIn">Sign In</a>
+            </div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li class="link-item"><a href="index.html">Home</a></li>
+                    <li class="link-item"><a href="#Blood or Plasma Donation">Blood or Plasma Donation</a></li>
+                    <li class="link-item"><a href="#COVID-19 Guidlines">COVID-19 Guidlines</a></li>
+                    <li class="link-item"><a href="gallery.html">Gallary</a></li>
+                    <li class="link-item"><a href="#About Us">About Us</a></li>
+                    <li class="link-item"><a href="#Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+        </Nav>
+
+        <!-- Breedcrumb  -->
+        <div class="breedcrumb">
+            <ol class="breedcrumb-links" style="list-style: none;">
+                <li class="breedcrumb-item u-links"><a href="index.html">Home</a></li>
+                >
+                <li class="breedcrumb-item">gallery</li>
+            </ol>
+        </div>
+
+
+
+        <div class="gallery">
+            <div class="card-item"><img src="./assits/img/card-1.jpg" onclick="openModal();currentSlide(1)" alt=""
+                    width="100%" height="100%" /></div>
+            <div class="card-item"><img src="./assits/img/card-2.jpg" onclick="openModal();currentSlide(2)" alt=""
+                    width="100%" height="100%" /></div>
+            <div class="card-item"><img src="./assits/img/card-3.jpg" onclick="openModal();currentSlide(3)" alt=""
+                    width="100%" height="100%" /></div>
+            <div class="card-item"><img src="./assits/img/card-4.jpg" onclick="openModal();currentSlide(4)" alt=""
+                    width="100%" height="100%" /></div>
+            <div class="card-item"><img src="./assits/img/card-5.jpg" onclick="openModal();currentSlide(5)" alt=""
+                    width="100%" height="100%" /></div>
+            <div class="card-item"><img src="./assits/img/card-6.jpg" onclick="openModal();currentSlide(6)" alt=""
+                    width="100%" height="100%" /></div>
+        </div>
+
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./assits/img/card-1.jpg" style="width: 1080px;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./assits/img/card-2.jpg" style="width:1080px;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./assits/img/card-3.jpg" style="width:1080px;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./assits/img/card-4.jpg" style="width:1080px;">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./assits/img/card-5.jpg" style="width:1080px;">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./assits/img/card-6.jpg" style="width:1080px;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="copyright">
+                Copyright &copy; 2021 Blood Donation. all right reserved. <a href="#Sitemap">Sitemap</a> |<a
+                    href="#privacy-policy"> Privacy Policy</a><br>
+                Developed by <a href="#dishant"> Dishant aarak</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assits/scripts/js/gallery.js"></script>
+</body>
+
+</html>
