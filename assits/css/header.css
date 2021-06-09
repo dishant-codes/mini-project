@@ -16,7 +16,7 @@ body {
 }
 a {
   text-decoration: none;
-  color:#283eb8;
+  color: #283eb8;
 }
 
 .breedcrumb {
@@ -37,18 +37,20 @@ a {
   text-decoration: underline;
 }
 
-
 .main-div {
   background-color: #fff;
   padding: 20px;
   margin: 2em 0;
   border-radius: 10px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
-  width: 1040px !important;
 }
 
 .nav-links .links {
@@ -108,4 +110,51 @@ a {
   background-color: rgb(0, 146, 146);
   color: #fff;
   border-color: #fff;
+}
+
+.dropbtn {
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }

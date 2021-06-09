@@ -8,7 +8,7 @@
 }
 
 .login-form {
-  width: 70%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +19,14 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
-  padding: 1rem 0;
+  padding-top: 1rem;
   color: #3d4044;
+}
+.login-form hr {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  height: 4px;
+  background-color: #3d4044;
 }
 
 .login p {
@@ -28,14 +34,33 @@
 }
 
 .form-input {
-  margin: 1rem 0;
-  padding: 10px 20px;
-  border: none;
-  outline: 0ch;
+  margin-top: 1rem;
   font-size: 18px;
   color: #3d4044;
-  font-weight: 400;
-  background-color: rgb(238, 238, 238);
+  border: 0;
+  padding: 7px 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+.form-input ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.form-input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
 }
 
 .btn-s {
@@ -43,8 +68,35 @@
   border: none;
   font-size: 18px;
   padding: 10px 20px;
+  margin: 2rem 0px;
   cursor: pointer;
   color: #fff;
   background-color: #0d6efd;
   outline: 0;
+}
+
+.admin {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10rem;
+  border-radius: 10px;
+}
+
+.message{
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  outline: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 2px solid rgb(207, 207, 207);
+}
+.msg{
+  margin-top: 0.7rem;
+}
+
+label{
+  font-size: 20px;
+  color: #3d4044;
 }
